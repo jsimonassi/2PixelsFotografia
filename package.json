@@ -1,0 +1,24 @@
+{
+  "name": "2pixelsfotografia",
+  "version": "1.0.0",
+  "description": "Website da @2PixelsFotografia",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jsimonassi/2PixelsFotografia.git"
+  },
+  "author": "João Victor Simonassi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jsimonassi/2PixelsFotografia/issues"
+  },
+  "homepage": "https://github.com/jsimonassi/2PixelsFotografia#readme",
+  "dependencies": {
+    "next": "^10.2.3",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  }
+}
