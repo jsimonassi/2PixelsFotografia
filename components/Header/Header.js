@@ -23,16 +23,25 @@ const Header = () => {
 
   return (
     <div>
-    <Navbar color="dark" light expand="md">
-      <a><img src="images/icon.jpg" style={{maxHeight:"150px"}}></img></a>
+    <Navbar style={{padding: "10px", position: 'fixed', top: '0px', width: '100%'}} dark expand="md">
+      <a><img src="images/icon.png" style={{maxHeight:"60px"}} alt = "icon-2pixels"></img></a>
       <NavbarToggler onClick={toggle} />
-      <Collapse isOpen={isOpen} navbar>
+      <Collapse style={{justifyContent: "center"}} isOpen={isOpen} navbar>
         <Nav className="mr-auto" navbar>
-          <NavItem>
-            <NavLink href="/galery">Ensaios</NavLink>
+        <NavItem>
+            <NavLink style={{color: 'white', fontFamily: 'sans-serif', fontWeight: 'bold'}} href="/">INÍCIO</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink href="/contact">Contatos</NavLink>
+            <NavLink style={{color: 'white', fontFamily: 'sans-serif', fontWeight: 'bold'}}   href="/galery">ENSAIOS</NavLink>
+          </NavItem>
+          <NavItem>
+            <NavLink style={{color: 'white', fontFamily: 'sans-serif', fontWeight: 'bold'}}   href="/contact">CONTATOS</NavLink>
+          </NavItem>
+          <NavItem>
+            <a href='https://www.instagram.com/2pixelsfotografia/'><img src="images/ig.png" style={{maxHeight:"35px", padding: "3px", marginLeft: '5px'}} alt = "icon-2pixels"></img></a>
+          </NavItem>
+          <NavItem>
+            <a href="https://www.facebook.com/2pixelsfotografia"><img src="images/fb.png" style={{maxHeight:"35px", padding: "3px", marginLeft: '5px'}} alt = "icon-2pixels"></img></a>
           </NavItem>
         </Nav>
       </Collapse>
