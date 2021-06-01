@@ -1,5 +1,3 @@
-
-
 import React, { useState } from 'react';
 import {
     Carousel,
@@ -13,10 +11,10 @@ import Logo from './Logo';
 
 const items = [
     {
-        src: 'images/bg1.jpg',
+        src: 'images/bg1small.jpg',
     },
     {
-        src: 'images/bg2.jpg',
+        src: 'images/bg2small.jpg',
     },
 ];
 

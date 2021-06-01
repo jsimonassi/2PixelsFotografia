@@ -1,18 +1,11 @@
 import React, { useState } from 'react';
-import Link from 'next/link';
 import {
   Collapse,
   Navbar,
   NavbarToggler,
-  NavbarBrand,
   Nav,
   NavItem,
-  NavLink,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem,
-  NavbarText
+  NavLink
 } from 'reactstrap';
 
 const Header = () => {
@@ -23,6 +16,9 @@ const Header = () => {
 
   return (
     <div>
+      <div style={{position: 'fixed', top: '0px', width: '100%', backgroundColor: 'black', height: '80px', opacity: 0.6}}>
+
+      </div>
     <Navbar style={{padding: "10px", position: 'fixed', top: '0px', width: '100%'}} dark expand="md">
       <a><img src="images/icon.png" style={{maxHeight:"60px"}} alt = "icon-2pixels"></img></a>
       <NavbarToggler onClick={toggle} />

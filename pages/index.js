@@ -1,8 +1,8 @@
 import Head from 'next/head';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from '../components/Header/Header';
-import {Button} from 'reactstrap';
 import Background from '../components/Background/Background';
+import Video from '../components/Video/Video';
 
 export default function Home() {
   return (
@@ -14,6 +14,7 @@ export default function Home() {
       </Head>
       <Background/>
       <Header/>
+      <Video/>
     </div>
   );
 }
