@@ -11,10 +11,9 @@ export default function Home() {
         <title>2Pixels Fotografia</title>
         <meta name='robots' content='index/follow' />
         <meta name='description' content='Registrando momentos em Itaboraí e região' />
-      </Head>
-      <Header />
-      <Background/>
-      <Video />
+      </Head> 
+     <h4>Upload de arquivos - 2Pixels Fotografia</h4>
+     
     </div>
   );
 }

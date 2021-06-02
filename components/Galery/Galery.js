@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Gallery from 'react-grid-gallery';
+import {getImages} from '../../lib/Api';
 
 const IMAGES =
     [{
@@ -55,6 +56,15 @@ const IMAGES =
 ]
 
 const Galery = () => {
+
+    const [images, setImages] = useState([]);
+
+    useEffect(async () => {
+        const response = await getImages();
+        if(response){
+            setImages(response);
+        }
+    }, []);
 
     return (
         <div>
