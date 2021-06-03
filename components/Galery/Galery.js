@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Gallery from 'react-grid-gallery';
-import {getImages} from '../../lib/Api';
+import { getImages } from '../../lib/Api';
 
 const IMAGES =
     [{
@@ -36,24 +36,24 @@ const IMAGES =
         thumbnail: "https://c4.staticflickr.com/9/8887/28897124891_98c4fdd82b_n.jpg",
         thumbnailWidth: 320,
         thumbnailHeight: 212
-    },{
+    }, {
         src: "https://c4.staticflickr.com/9/8887/28897124891_98c4fdd82b_b.jpg",
         thumbnail: "https://c4.staticflickr.com/9/8887/28897124891_98c4fdd82b_n.jpg",
         thumbnailWidth: 320,
         thumbnailHeight: 212
-    },{
+    }, {
         src: "https://c4.staticflickr.com/9/8887/28897124891_98c4fdd82b_b.jpg",
         thumbnail: "https://c4.staticflickr.com/9/8887/28897124891_98c4fdd82b_n.jpg",
         thumbnailWidth: 320,
         thumbnailHeight: 212
-    },{
+    }, {
         src: "https://c4.staticflickr.com/9/8887/28897124891_98c4fdd82b_b.jpg",
         thumbnail: "https://c4.staticflickr.com/9/8887/28897124891_98c4fdd82b_n.jpg",
         thumbnailWidth: 320,
         thumbnailHeight: 212
     }
 
-]
+    ]
 
 const Galery = () => {
 
@@ -61,14 +61,16 @@ const Galery = () => {
 
     useEffect(async () => {
         const response = await getImages();
-        if(response){
+        if (response) {
             setImages(response);
         }
     }, []);
 
     return (
         <div>
-            <h4>João Victor Simonassi Farias</h4>
+            <div style={{backgroundColor: 'gray', paddingTop: '2%', paddingBottom: '2%', paddingLeft: '2%'}}>
+                <h4 style={{ fontSize: 'calc(12px + 2vw)', color: '#fff' }}>João Victor Simonassi</h4>
+            </div>
             <Gallery images={IMAGES} />
         </div>
     );

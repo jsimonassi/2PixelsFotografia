@@ -13,7 +13,7 @@ export default function Home() {
                 <meta name='description' content='Registrando momentos em Itaboraí e região' />
             </Head>
             <Header />
-            <div style={{ marginTop: '150px' }}>
+            <div style={{backgroundColor: 'black', height: '100vh'}}>
                 <GaleryHeader />
                 <Galery />
             </div>

@@ -13,7 +13,7 @@ export default function Home() {
         <meta name='description' content='Registrando momentos em Itaboraí e região' />
       </Head>
       <Header />
-      <Background/>
+      <Background />
       <Video />
     </div>
   );
